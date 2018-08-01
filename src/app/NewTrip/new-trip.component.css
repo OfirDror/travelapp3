@@ -1,0 +1,108 @@
+.newTripWrapper {
+    position: fixed;
+    top: 12%;
+    left: 22%;
+    width: 1000px;
+    height: 800px;
+    background-color:rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.trip {
+    height: 120px;
+    widtH: 1000px;
+    color: #ffff4d;   
+    background-color:rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.text {
+    position: fixed;
+    top: 7%;
+    left: 22%;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.deleteButton {
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.newTrip {
+    position: fixed;
+    top: 7%;
+    left: 58%;
+    padding: 5px;
+    background-color: black;
+    border-style: none;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.form_field {
+    width: 400px;
+    height: 40px;
+    color: #ffff4d;   
+    font-size: 30px;
+    margin: 50px;
+}
+
+select {
+    height: 40px;
+    font-size: 30px;
+    width: 510px;
+}
+
+input {
+    margin-left: 5px;
+    height: 40px;
+    width: 500px;
+    font-size: 30px;
+ }
+ 
+ input.ng-invalid {
+     border-left: 5px solid red;
+ }
+
+ input.ng-valid {
+    border-left: 5px solid green;
+}
+ 
+select.ng-invalid {
+    border-left: 5px solid red;
+}
+
+select.ng-valid {
+   border-left: 5px solid green;
+}
+
+.cancelButton {
+    margin-top: 10px;
+    margin-right: 170px;
+    margin-left: 55px;
+    width: 140px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.cancelButton:hover {
+    color: red;
+}
+
+.saveButton {
+    margin-top: 10px;
+    margin-right: 170px;
+    margin-left: 55px;
+    width: 140px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.saveButton:hover, saveButton:active {
+    color: blue;
+}

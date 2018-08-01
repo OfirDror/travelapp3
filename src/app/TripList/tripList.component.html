@@ -1,0 +1,13 @@
+<div class="text"> Available Trips: <br> </div>
+<a [routerLink]="['/newTrip']" class="newTrip">Add A New Trip</a>
+<div class="tripListWrapper">
+ <div class="trip" *ngFor="let trip of trips" >
+    {{ trip.city }}, {{ trip.country }}:
+    {{ trip.name }} -
+    {{ trip.description }}.<br>
+    Dates: {{ trip.startDate }} - {{ trip.endDate }}<br>
+    <img class="deleteButton" title="Detele Trip" src="assets/delete.png" (click)="deleteTrip(trip)"/>
+ </div>
+
+</div> 
+

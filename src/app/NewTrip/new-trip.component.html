@@ -1,0 +1,44 @@
+<div class="newTripWrapper" *ngIf="adding_trip">
+        <!-- Fields -->
+        <form  (ngSubmit)="onSubmit(currentTrip)" #tripForm="ngForm">
+          <div class="form_field">
+            <label for="title">Trip Name:</label>
+            <input [(ngModel)]="currentTrip.name" type="text" name="name" required>
+          </div>
+          <div class="form_field">
+            <label for="description">Description:</label>
+            <input [(ngModel)]="currentTrip.description" type="text" name="description" required>
+          </div>
+          <div class="form_field">
+            <label for="country">Country:</label><br>
+            <select class="form-control" id="country" name="country" [(ngModel)]="currentTrip.country" required>
+                    <option disabled selected value> -- Select country -- </option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Czech">Czech</option>
+                    <option value="Italy">Italy</option>
+                    <option value="France">France</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="UK">UK</option>
+            </select>
+          </div>
+          <div class="form_field">
+                <label for="city">City:</label>
+                <input [(ngModel)]="currentTrip.city" type="text" name="city" required>
+              </div>
+
+              <div class="form_field">
+                <label for="startDate">Departure:</label>
+                <input [(ngModel)]="currentTrip.startDate" type="text" name="startDate" required>
+              </div>
+              <div class="form_field">
+                <label for="endDate">Arrival:</label>
+                <input [(ngModel)]="currentTrip.endDate" type="text" name="endDate" required>
+              </div>
+          <!-- Buttons -->
+          <div>
+            <button type="submit" [disabled]="!tripForm.form.valid" class="saveButton" >Save</button>
+            <button type="cancel" class="cancelButton" (click)="cancelClicked()">Cancel</button>
+          </div>
+        </form>
+      </div>
+    
